@@ -1,0 +1,157 @@
+body{
+    background: linear-gradient(135deg, #fed7aa, #fecaca, #fbcfe8);
+} 
+
+.card-title {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.english-sub-heading-font{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+.btn-outline-custom-one{
+    --bs-btn-color:  #2D4059;
+    --bs-btn-border-color:  #2D4059;
+    --bs-btn-hover-border-color: #2D4059;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #53657A;
+    --bs-btn-hover-border-color: #53657A;  
+    background-color: #2D4059;
+    color:#fff;
+}
+
+.btn-outline-custom-two{
+ --bs-btn-color:  #EA5455;
+    --bs-btn-border-color:  #EA5455;
+    --bs-btn-hover-border-color: #EA5455;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #F38B8D;
+    --bs-btn-hover-border-color: #F38B8D;  
+    background-color: #EA5455;
+    color:#fff;
+}
+
+.btn-outline-custom-three{
+    --bs-btn-color:  #FFD93D;
+    --bs-btn-border-color:  #FFD93D;
+    --bs-btn-hover-border-color: #FFD93D;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #FFE47A;
+    --bs-btn-hover-border-color: #FFE47A;  
+    background-color: #FFD93D;
+    color:#fff;
+}
+
+.btn-outline-custom-four{
+    --bs-btn-color: #918BFF;
+    --bs-btn-border-color:  #918BFF;
+    --bs-btn-hover-border-color: #918BFF;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #b1b5ee;
+    --bs-btn-hover-border-color: #b1b5ee; 
+    background-color: #918BFF;
+    color: white;
+}
+
+.btn-outline-custom-five{
+     --bs-btn-color: #6C63FF;
+    --bs-btn-border-color:  #6C63FF;
+    --bs-btn-hover-border-color: #6C63FF;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #817AFF;
+    --bs-btn-hover-border-color: #817AFF;  
+    background-color: #6C63FF;
+    color:#fff;
+}
+
+.btn-outline-custom-six{
+    --bs-btn-color: #7efd3c;
+    --bs-btn-border-color: #7efd3c;
+    --bs-btn-hover-border-color: #7efd3c;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #A2FF73;
+    --bs-btn-hover-border-color: #A2FF73;  
+    background-color: #7efd3c;
+    color:#fff;
+}
+
+.btn-outline-custom-seven{
+    --bs-btn-color: #b5f393;
+    --bs-btn-border-color: #b5f393;
+    --bs-btn-hover-border-color: #b5f393;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #C9F7AE;
+    --bs-btn-hover-border-color: #C9F7AE;   
+    background-color: #b5f393;
+    color:#fff;
+}
+
+.btn-outline-custom-eight{
+     --bs-btn-color: #98d2ac;
+    --bs-btn-border-color: #98d2ac;
+    --bs-btn-hover-border-color: #98d2ac;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #B6E2C5;
+    --bs-btn-hover-border-color: #B6E2C5;   
+    background-color: #98d2ac;
+    color:#fff;
+}
+
+.card{
+    transition: all 0.4s ease;
+    /* Here all means that this transition would apply on all the properties which the cards have */
+    /* Here ease means the animation type like it would move in ease with 0.4s */
+}
+
+.card:hover{
+    transform: scale(1) translateY(-20px);
+}
+
+
+
+.card-grp-two.active{
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 1;    
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 1;
+  }
+}
+
+
+/* Mesh baiscally means that there are multiple colors sperad in multiple direction */
+/* Now for linear gradient there can also be many colors but they are spread only one direction */
+/* background: linear-gradient(135deg, #a5f3fc, #818cf8); */
+
+/* english-sunheading-text-custom-styles */
+.text-custom{
+    color: #F5C928;
+}
