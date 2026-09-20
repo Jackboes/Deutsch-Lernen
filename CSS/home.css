@@ -119,6 +119,13 @@ h2{
     font-style: normal;
 }
 
+.footer-style{
+  background-color: #FFF9F2;
+  overflow: hidden;
+  width: 100vw;
+  
+}
+
 .lead-two{
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
@@ -816,19 +823,7 @@ p{
 }
 
 .learning-section {
-  
-    background:
-        radial-gradient(
-            circle at 50% 20%,
-            rgba(234, 84, 85, 0.10),
-            transparent 45%
-        ),
-        radial-gradient(
-            circle at 85% 80%,
-            rgba(255, 212, 96, 0.10),
-            transparent 40%
-        ),
-        #FFF9F2;
+  background-color: #F4F4F8;
 }
 
 
@@ -850,7 +845,92 @@ p{
 }
 
 
+/* Pricing Card */
+.pricing-card {
+    width: 320px;
+    padding: 30px;
+    background-color: #FFF9F2;
+    border: 2px solid #2D4059;
+    border-radius: 20px;
+    text-align: center;
 
+    box-shadow: 0 10px 25px rgba(45, 64, 89, 0.12);
+
+    transition: 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(45, 64, 89, 0.18);
+}
+
+.pricing-card h3 {
+    color: #2D4059;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.plan-description {
+    color: #777;
+    font-size: 15px;
+}
+
+.price {
+    color: #2D4059;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+}
+
+.pricing-card hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.pricing-card li {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.pricing-card button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #EA5455;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pricing-card button:hover {
+    background-color: #d94343;
+}
+
+.podcast-icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
 
 /* 
 .working-steps{
