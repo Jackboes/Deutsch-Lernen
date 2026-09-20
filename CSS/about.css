@@ -144,84 +144,22 @@ header  {
 
 body {
     min-height: 100vh;
-
-    background-color: #fffaf5;
-
-    background-image:
-        linear-gradient(
-            to bottom,
-            /* to bottom means that it has started from top and will end at bottom */
-           rgba(74, 144, 226, 0.30),
-            transparent 45%
-          /* Here the transperent effect or the blend of the colors is caused by the transparent 55% value */
-        ),
-
-        linear-gradient(
-           to top,
-            /* Here 90% means that the color spread horizontally that is from left to right */
-            /* Here 10% means that how would the color look vertically */
-           rgba(100, 181, 246, 0.20),
-            transparent 55%
-        );
+    background-color: #F4F4F8;
 }
 
-
-.slide-wrapper.active {
-	-webkit-animation: slide-top 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
-	        animation: slide-top 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+.slide-wrapper,
+.slide-wrapper-two {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-            opacity: 1;
-  }
+.slide-wrapper.active,
+.slide-wrapper-two.active {
+    opacity: 1;
+    transform: translateY(0);
 }
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-            opacity: 1;
-  }
-}
-
-.slide-wrapper-two.active{
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-
 
 .nav-link{
     font-family: "Ubuntu", sans-serif;
