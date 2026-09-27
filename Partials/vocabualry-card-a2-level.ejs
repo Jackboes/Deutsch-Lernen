@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Geist+Pixel&family=Germania+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+VIC+Guides&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/vocard-level-two.css">
+</head>
+<body>
+
+    <div class="d-flex flex-column justify-content-md-center align-items-md-center mt-3">
+        <div class="progress" style=" width: 500px;height: 20px;" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger">
+                
+            </div>
+        </div>
+        <p class="progress-text mt-2">1/25</p>
+    </div>
+   
+
+<div class="d-flex flex-column justify-content-md-center align-items-md-center" style="min-height: 60vh; margin-top: 60px;">
+    <!-- Felx column basically tells the browser to arrange the things from top-to-bottom instead of side-by-side which is the default -->
+
+
+    <div class="card shadow h-100 border border-3" style="border-color: #2D4059 !important;">
+        <div class="card-body">
+            <div class="d-flex justify-content-md-end">
+                <button class="sound-btn">
+                    <img src="/images/Vocabulary-images/TTS.png" alt="Pronunciation-Button">
+                </button>
+            </div>
+
+            <img src="<%= vocabulary[0].imagePath %>" alt="<%= vocabulary[0].word %>" class="img-fluid mx-auto img mb-3" style="max-height: 150px; width: auto;">
+
+            <h3 class="card-title text-center word mt-2" style="color:#2D4059;">
+                <%= vocabulary[0].word %>
+            </h3>
+
+            <p class="card-text text-center meaning mt-2">
+                <%= vocabulary[0].meaning %>
+                <%= vocabulary[0].emoji %>
+            </p>
+
+        </div>        
+    </div>
+
+    <div class="d-flex justify-content-md-center align-items-md-center mt-5" style="gap: 150px;">
+        <button type="button" class="btn btn-lg btn-danger prev-butt">Previous</button>
+        <button type="button" class="btn btn-lg btn-success next-butt">Next</button>    
+    </div>
+    
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    const vocabulary = <%- JSON.stringify(vocabulary) %>;
+</script>
+<!-- This basically does the flat-packing process the IKEA one and this converts teh JS objects into 
+ a string, string in such a form that all the commas will be there  -->
+<!-- Here we wrote this line buz my server and EJS know what is inside vocabulary but my vocard.js which is the one running in the 
+ browser does not know what is inside vocabulary so for that to know I wrote this line of code
+ JSON.stringify() basically converts JS array/objects into a JSON format which can be embedded into the broweser -->
+<script src="/js/vocard.js" charset="UTF-8"></script>
+</body>
+</html>
