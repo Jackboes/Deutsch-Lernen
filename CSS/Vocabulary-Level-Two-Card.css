@@ -1,12 +1,14 @@
 body{
-    background-image: linear-gradient(135deg, #FFE9A3 0%, #FFD460 100%);  
+    background-color: #FBF6EF;  
 }
+
 
 .card-text{
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 25px;
+    color: #4A5568;
 }
 
 .card-title{
@@ -18,9 +20,12 @@ body{
 
 .card{
    
-    background-color: #F58B8C;
-    border-radius: 35px;
-    
+    background-color: #FFFFFF;
+    border-radius: 28px;
+    padding: 32px 40px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;    
 }
 
 .progress-text{
@@ -32,4 +37,17 @@ body{
 
 .next-butt{
     width: 100px;
+}
+
+.sound-btn img{
+    width: 50px;
+    height: 55px;
+    color: #2D4059;
+}
+
+.sound-btn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 5px;
 }
