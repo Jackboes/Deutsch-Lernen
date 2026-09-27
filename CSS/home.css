@@ -71,7 +71,7 @@
 }
 
 .carousel-caption h5{
-    font-family: "Lexend Zetta", sans-serif;
+    font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
@@ -80,7 +80,7 @@
 }
 
 .carousel-caption p{
-    font-family: "Poppins", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
@@ -94,7 +94,7 @@
 
 .card-header h4{
     color: #2B2A28;
-    font-family: "Changa One", sans-serif;
+    font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
@@ -300,7 +300,7 @@ p{
 
 
 .podcast-text-advice{
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -365,18 +365,32 @@ p{
 }
 
 
+.topics-card{
+    background-color: #FFFFFF !important;
+    border-color: #2D4059 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topics-card h3{
+  color: #2D4059;
+  margin-bottom: 15px;
+}
  .topics-card{
      /* transform: scale(1);  */
     transition: transform 0.5s ease;
 } 
-
+.topics-card .card-text {
+    color: #4A5568; 
+    min-height: 70px; 
+}
 .topics-card:hover{
     
     transform: scale(1.1);
     transition: transform 0.5s ease;
+    box-shadow: 0 15px 30px rgba(45, 64, 89, 0.15) !important;
 }
-
-
 
 .text-punch-style.active{
       -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -431,15 +445,51 @@ p{
   }
 }
 
-.level-card-pop{
-    /* transform: scale(1); */
-    transition: transform 0.5s ease;
+
+
+/* German In levels section styling */
+.levels-band {
+    background-color: #FFD93D; 
+    margin-left: calc(-50vw + 50%); 
 }
 
-.level-card-pop:hover{
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
-      
+
+.level-card {
+    background-color: #FFFFFF;
+    border: 2px solid #2D4059;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(45, 64, 89, 0.2) !important;
+}
+
+.level-card h3 {
+    color: #2D4059;
+    font-size: 1.8rem;
+}
+
+.level-card .card-text {
+    color: #4A5568;
+}
+
+.level-badge {
+    display: inline-block;
+    background-color: #EA5455;
+    color: #FFFFFF;
+    font-family: "Lilita One", sans-serif;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.podcast-info {
+    background-color: #F07B3F;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
 }
 
 .text-step-style.active{
@@ -569,8 +619,8 @@ p{
             transform: translateY(-100px);
   }
 }
-
-
+ 
+ 
 .extra-box-style.active{
     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -635,7 +685,7 @@ p{
     transform: scale(0.9); 
     transition: transform 0.5s ease;
 }
-
+ 
 .price-text-style.active{
       -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -664,7 +714,7 @@ p{
             transform: translateY(-100px);
     opacity: 1;
   }
-}
+} 
 
 .price-style.active{
           -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -760,89 +810,32 @@ p{
   }
 }
 
-
-.btn-outline-custom-grammar{
-  --bs-btn-color:  #2D4059;
-    --bs-btn-border-color:  #2D4059;
-    --bs-btn-hover-border-color: #2D4059;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg:  #EA5455;
-    --bs-btn-hover-border-color: #EA5455;  
-    background-color: #2D4059;
-    color:#fff;
-    font-family: "Changa one", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
-}
-
-
-.btn-outline-custom-vocab{
-  --bs-btn-color:  #EA5455;
-    --bs-btn-border-color:  #EA5455;
-    --bs-btn-hover-border-color: #EA5455;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg:  #FFD93D;
-    --bs-btn-hover-border-color: #FFD93D;  
+/* All Button Style */
+.btn-primary-lernen {
     background-color: #EA5455;
-    color:#fff;
-    font-family: "Changa one", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
+    color: #FFFFFF;
+    border: 2px solid #EA5455;
+    border-radius: 24px; 
+    padding: 8px 24px;
+    font-family: "Nunito Sans", sans-serif; 
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
 }
 
-.btn-outline-custom-flash{
-  --bs-btn-color:  #116EEE;
-    --bs-btn-border-color:  #116EEE;
-    --bs-btn-hover-border-color: #116EEE;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg:  #11EE92;
-    --bs-btn-hover-border-color: #11EE92;  
-    background-color: #116EEE;
-    color:#fff;
-    font-family: "Changa one", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
-}
-
-.btn-outline-custom-quiz{
-   --bs-btn-color:  #FFD93D;
-    --bs-btn-border-color:  #FFD93D;
-    --bs-btn-hover-border-color: #FFD93D;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg:  black;
-    --bs-btn-hover-border-color:  black;  
-    background-color: #FFD93D;
-    color:#fff;
-    font-family: "Changa one", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
+/* Hover State */
+.btn-primary-lernen:hover {
+    background-color: #2D4059;
+    border-color: #2D4059;
+    color: #FFFFFF;
+    transform: scale(1.05); 
 }
 
 .learning-section {
-  background-color: #F4F4F8;
+  background-color: #F6F4EF;
 }
 
 
-
-
-.btn-outline-price-feat{
-  --bs-btn-color:  #116EEE;
-    --bs-btn-border-color:  #116EEE;
-    --bs-btn-hover-border-color: #116EEE;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg:  #11EE92;
-    --bs-btn-hover-border-color: #11EE92;  
-    background-color: #116EEE;
-    color:#fff;
-    font-family: "Changa one", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: normal;
-}
 
 
 /* Pricing Card */
@@ -853,15 +846,12 @@ p{
     border: 2px solid #2D4059;
     border-radius: 20px;
     text-align: center;
-
-    box-shadow: 0 10px 25px rgba(45, 64, 89, 0.12);
-
-    transition: 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pricing-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(45, 64, 89, 0.18);
+     transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(45, 64, 89, 0.2) !important;
 }
 
 .pricing-card h3 {
@@ -905,24 +895,45 @@ p{
     color: #444;
 }
 
+.price-button-sign{
+    width: 130px;
+    height: 45px;
+    border-radius: 45px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.pricing-card-icon{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+} 
+
+.pricing-card-info {
+  background-color: #FFD93D; 
+  width: 100vw;
+    margin-left: calc(-50vw + 50%); 
+}
+
+/* 
 .pricing-card button {
-    width: 100%;
-    padding: 12px;
-
-    border: none;
-    border-radius: 10px;
-
-    background-color: #EA5455;
-    color: white;
-
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+  width: 160px;
+  height: 55px;
+  border: 3px solid #EA5455;
+  border-radius: 45px;
+  cursor: pointer;
+  background: #EA5455;
+  font-size: 1.2em;
+  font-weight: 550;
+  color: white;
 }
 
 .pricing-card button:hover {
-    background-color: #d94343;
-}
+  background: #EA5455;
+  font-size: 1.5em;
+} */
 
 .podcast-icon {
     width: 35px;
